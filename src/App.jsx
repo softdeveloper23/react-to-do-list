@@ -52,6 +52,7 @@ export default function App() {
       </form>
       <h1 className="header">To Do List</h1>
       <ul className="list">
+        {todos.length === 0 && "No Todos Listed..."}
         {todos.map(todo => {
           return (
             <li key={todo.id}>
